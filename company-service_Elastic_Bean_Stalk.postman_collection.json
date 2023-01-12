@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "44cf530b-5abe-4be1-926a-2c6d2708777b",
+		"name": "company-service Elastic Bean Stalk",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add-company",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"companyCode\": \"CTS\",\r\n    \"companyName\": \"Cognizant\",\r\n    \"companyCEO\": \"Brain\",\r\n    \"companyTurnOver\": \"$18650000000\",\r\n    \"companyWebsite\": \"https://www.cognizant.com/\",\r\n    \"stockExchange\": \"68.45\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://companyservice-env-2.eba-tyminqgx.us-east-1.elasticbeanstalk.com/companies/",
+					"protocol": "http",
+					"host": [
+						"companyservice-env-2",
+						"eba-tyminqgx",
+						"us-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"companies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-company",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://companyservice-env-2.eba-tyminqgx.us-east-1.elasticbeanstalk.com/companies/companyDetails/CTS",
+					"protocol": "http",
+					"host": [
+						"companyservice-env-2",
+						"eba-tyminqgx",
+						"us-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"companies",
+						"companyDetails",
+						"CTS"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-company",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://companyservice-env-2.eba-tyminqgx.us-east-1.elasticbeanstalk.com/companies/delete/CTS",
+					"protocol": "http",
+					"host": [
+						"companyservice-env-2",
+						"eba-tyminqgx",
+						"us-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"companies",
+						"delete",
+						"CTS"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

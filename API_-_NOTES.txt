@@ -1,0 +1,14 @@
+API - NOTES :
+In company service and stock service
+@CrossOrigin(origins = "http://localhost:4200")
+
+http://COMPANY-SERVICE-AWS/companies/companyDetails/
+
+
+http://localhost:9192/companies/companyDetails/
+
+
+http://companyservice-env-2.eba-tyminqgx.us-east-1.elasticbeanstalk.com/
+
+http://stockservice-env.eba-cmgpuink.us-east-1.elasticbeanstalk.com/
+

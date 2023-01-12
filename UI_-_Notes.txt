@@ -1,0 +1,23 @@
+ng add @angular/material
+
+http://localhost:9192/companies/
+http://localhost:9193/stocks/
+
+
+
+http://companyservice-env-2.eba-tyminqgx.us-east-1.elasticbeanstalk.com/companies/
+
+http://stockservice-env.eba-cmgpuink.us-east-1.elasticbeanstalk.com/stocks/
+
+ng build --configuration production
+
+    "budgets": [
+       {
+          "type": "initial",
+          "maximumWarning": "2mb",
+          "maximumError": "5mb"
+       }
+    ]
+
+
+http://stock-market-app-ui.s3-website-us-east-1.amazonaws.com
